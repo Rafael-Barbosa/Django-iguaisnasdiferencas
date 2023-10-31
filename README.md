@@ -7,3 +7,10 @@ através da equoterapia. 🐴🤍
 
 ### Pacotes Necessários
 `pip install -r requirements.txt`
+
+### Para iniciar o ambiente
+`source .venv/bin/activate`
+
+
+### Para iniciar o servidor
+`python manage.py runserver`
