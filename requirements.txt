@@ -3,8 +3,6 @@ asgiref==3.7.2
 Babel==2.11.0
 Beaker==1.12.1
 beautifulsoup4==4.12.2
-blivet==3.7.1
-blivet-gui==2.4.2
 Brlapi==0.8.4
 cffi==1.15.1
 chardet==5.2.0
