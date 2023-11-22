@@ -1,20 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Register - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-primary" style="background-color: #4e73df">
     <div class="container">
         <div class="card shadow-lg o-hidden border-0 my-5">
             <div class="card-body p-0">
                 <div class="row">
-                    <div class="col-lg-7 offset-xxl-2">
+                    <div class="col-md-10 col-lg-4 col-xl-12">
                         <div class="p-5">
                             <div class="text-center">
                                 <h4 class="text-dark mb-4">Criar Usuário</h4>
@@ -32,21 +33,21 @@
                                 <div class="row mb-3">
                                     <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Senha" name="senha"></div>
                                     <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Repetir Senha" name="repita_senha"></div>
-                                </div><button class="btn btn-primary d-block btn-user w-100" type="submit">Salvar</button>
-                                <hr>
+                                </div>
+                                <div class="col-md-12" style="">
+                                    <button class="btn btn-primary d-block btn-user w-100" type="submit" style="background-color: #4e73df; border-color: #4262be;">Salvar</button>
+                                </div>
                                 <hr>
                             </form>
-                            <div class="text-center"><a class="small" href="forgot-password.html">Esqueceu sua senha?</a></div>
-                            <div class="text-center"><a class="small" href="login.html">já tem uma conta? Conecte-se!</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bs-init.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
 </body>
 
 </html>
