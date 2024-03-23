@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'IguaisNasDiferencas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mydb',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '192.168.152.14',
+        'NAME': 'iguaisnasdiferencas',
+        'USER': 'iguaisnasdiferencas',
+        'PASSWORD': 'iguaisnasdiferencas',
+        'HOST': 'localhost',
         'PORT': '3306'
     }
 }
