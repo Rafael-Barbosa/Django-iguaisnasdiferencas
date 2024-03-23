@@ -12,4 +12,4 @@ através da equoterapia. 🐴🤍
 `source .venv/bin/activate`
 
 ### Para iniciar o servidor
-`python manage.py runserver`
+`python manage.py runserver 0.0.0.0:5555`
