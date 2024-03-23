@@ -40,7 +40,7 @@
     document.addEventListener("scroll", collapseNavbar);
 
     // Hide navbar when modals trigger
-    var modals = document.querySelectorAll('.portfolio-modal');
+    var modals = document.querySelectorAll('.gallery-modal');
       
     for (var modal of modals) {
       
@@ -55,3 +55,23 @@
   }
 
 })(); // End of use strict
+
+
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 120) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
