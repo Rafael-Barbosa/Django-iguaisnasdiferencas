@@ -66,3 +66,16 @@ class Pessoadeficiencia(models.Model):
     class Meta:
         managed = False
         db_table = 'pessoadeficiencia'
+
+
+class Image(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=20, null=False)
+    image_thumbnail = models.ImageField(upload_to='images/', null=False)
+    image_full = models.ImageField(upload_to='images/', null=False)
+    description = models.TextField(max_length=250, default='Descrição', null=False)
+    short_description = models.TextField(max_length=40, default='Descrição curta', null=False)
+
+
+    def __str__(self):
+        return self.title
