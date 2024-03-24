@@ -139,3 +139,6 @@ LOGIN_URL = '/login'
 LOGIN_REDIRECT_URL = '/painel'
 LOGOUT_REDIRECT_URL = '/login'
 
+MEDIA_URL = 'app/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR/'app', 'media')
+
