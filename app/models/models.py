@@ -73,7 +73,7 @@ class Image(models.Model):
     title = models.CharField(max_length=20, null=False)
     image_thumbnail = models.ImageField(upload_to='images/', null=False)
     image_full = models.ImageField(upload_to='images/', null=False)
-    description = models.TextField(max_length=250, default='Descrição', null=False)
+    description = models.TextField(max_length=1000, default='Descrição', null=False)
     short_description = models.TextField(max_length=40, default='Descrição curta', null=False)
 
 
