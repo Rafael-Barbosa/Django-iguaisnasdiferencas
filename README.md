@@ -48,6 +48,10 @@ do Python, baixe qualquer versão acima da 3.x e siga os passos no instalador.
    Ao fim da instalação, inicie o Ubuntu e siga os passos apresentados.
 2. VM Linux
    - Siga os passos [deste vídeo](https://www.youtube.com/watch?v=XxZ8BTCBDis).
+
+**Ao finalizar as instalações do Linux, execute o comando abaixo para instalar os
+pacotes necessários no Linux**<br>
+`sudo apt-get install pkg-config libcairo2-dev libsystemd-dev build-essential libdbus-glib-1-dev libgirepository1.0-dev -y`
    
 ~~Usa Ubuntu se quiser, mas te julgarei se não usar.~~
 
@@ -73,13 +77,13 @@ Para restaurar a base basta executar o `.sql` em uma base de sua preferência.
 ## Python
 
 ### Criar ambiente virtual
-`python -m venv venv`
+`python3 -m venv venv`
 
 ### Para iniciar o ambiente
 `source venv/bin/activate`
 
 ### Pacotes Necessários
-`pip install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 ### Para iniciar o servidor
-`python manage.py runserver 0.0.0.0:5555`
+`python3 manage.py runserver 0.0.0.0:5555`
