@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap">
     <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo.ico'%}">
 
 </head>
 <body id="page-top" data-bs-spy="scroll" >
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">
-                <img src="{% static 'img/logo.png'%}" width="112" height="112">
+                <img src="{% static 'img/logo.webp'%}" width="112" height="112">
             </a>
             <button
                 data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
@@ -36,7 +37,7 @@
             </div>
         </div>
     </nav>
-    <header class="masthead" style="background-image: url('{% static 'img/header-bg.png'%}');">
+    <header class="masthead" style="background-image: url('{% static 'img/header-bg.webp'%}');">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in"><span>Sem fins lucrativos </span></div>
@@ -114,6 +115,7 @@
             </div>
         </div>
     </section>
+
     <section id="sobre">
         <div class="container">
             <div class="row">
@@ -183,6 +185,7 @@
             </div>
         </div>
     </section>
+
     <section id="time">
         <div class="container">
             <div class="row">
@@ -192,30 +195,38 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member"><img class="rounded-circle mx-auto" src="{% static 'img/team/1.jpg'%}">
-                        <h4>Pessoa 1</h4>
-                        <p class="text-muted">Função</p>
+                <div class="col-sm-3">
+                    <div class="team-member"><img class="rounded-circle mx-auto" src="{% static 'img/team/angelica.webp'%}">
+                        <h4>Angélica</h4>
+                        <p class="text-muted">Presidente</p>
                         <ul class="list-inline social-buttons"></ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member"><img class="rounded-circle mx-auto" src="{% static 'img/team/2.jpg'%}">
-                        <h4>Pessoa 2</h4>
-                        <p class="text-muted">Função</p>
+                <div class="col-sm-3">
+                    <div class="team-member"><img class="rounded-circle mx-auto" src="{% static 'img/team/eloir.webp'%}">
+                        <h4>Eloir</h4>
+                        <p class="text-muted">Tesoureiro</p>
                         <ul class="list-inline social-buttons"></ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member"><img class="rounded-circle mx-auto" src="{% static 'img/team/3.jpg'%}">
-                        <h4>Pessoa 3</h4>
-                        <p class="text-muted">Função</p>
+                <div class="col-sm-3">
+                    <div class="team-member"><img class="rounded-circle mx-auto" src="{% static 'img/team/chico.webp'%}">
+                        <h4>Chico</h4>
+                        <p class="text-muted">Auxiliar Guia</p>
+                        <ul class="list-inline social-buttons"></ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member"><img class="rounded-circle mx-auto" src="{% static 'img/team/luciele.webp'%}">
+                        <h4>Lucieli</h4>
+                        <p class="text-muted">Responsável técnica</p>
                         <ul class="list-inline social-buttons"></ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="contato" style="background-image: url('{% static 'img/map-image.png'%}');">
         <div class="container">
             <div class="row">
